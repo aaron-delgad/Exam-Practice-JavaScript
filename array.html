@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var cursos=[
+            {TipoDeSuscripcion:'Free',Beneficio:'Solo puedes tomas los cursos gratis'},
+            {TipoDeSuscripcion:'Basic',Beneficio:'Puedes tomar casi todos los cursos de Platzi durante un mes'},
+            {TipoDeSuscripcion:'Expert',Beneficio:'Puedes tomar casi todos los cursos de Platzi durante un año'},
+            {TipoDeSuscripcion:'ExpertPlus',Beneficio:'Tú y alguien mas pueden tomas TODOS los curso de Platzi durante un año'}
+        ]
+        var CursosFiltrados=cursos.filter(function(curso){
+            if(curso.TipoDeSuscripcion==="ExpertPlus"){
+                console.log(curso.Beneficio);
+            }
+        });
+    </script>
+</body>
+</html>
